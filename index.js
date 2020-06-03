@@ -1,3 +1,5 @@
 
-import { NativeModules } from 'react-native';
-module.exports = NativeModules.Sms
+import { NativeModules, Platform } from 'react-native';
+if(Platform.OS =='android'){
+    module.exports = NativeModules.Sms
+}
